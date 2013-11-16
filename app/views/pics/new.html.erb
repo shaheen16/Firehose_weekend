@@ -1,11 +1,17 @@
-<div class = "span6 offset5 boxy text-center">
-	<h1 class="h1-custom">
-	<%= simple_form_for @pic do |f|%>
-		<%= f.input :lesson %>
-		<%= f.input :emotion %>
-		<%= f.input :learned %>
-		<%= submit_tag 'Save' %>
+<div class = "span8 offset4 boxy text-center">
+	<h1 class= "h2-custom">
+		Upload another lesson
 	</h1>
+
+	<h2>
+	<%= simple_form_for @pic do |f|%>
+		<%= f.input :lesson, :label => 'Your latest lesson', :placeholder => '1,2, etc.' %>
+		<br/>
+		<%= f.input :emotion, :label => 'How are you feeling?', :placeholder => 'jazzed, excited, wtf!!' %>
+		<br/>
+		<%= f.input :learned, :label => 'What did you learn?', :placeholder => 'nothing, i dont know, html, css' %>
+		<%= submit_tag 'Save', :class => 'btn btn-success btn-large'%>
+	</h2>
 
 	<%end%>
 </div>
