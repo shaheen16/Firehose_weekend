@@ -1,0 +1,11 @@
+<div class = "span6 offset5 boxy text-center">
+	<h1 class="h1-custom">
+	<%= simple_form_for @pic do |f|%>
+		<%= f.input :lesson %>
+		<%= f.input :emotion %>
+		<%= f.input :learned %>
+		<%= submit_tag 'Save' %>
+	</h1>
+
+	<%end%>
+</div>
