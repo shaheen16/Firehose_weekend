@@ -14,7 +14,8 @@ class PicsController < ApplicationController
 
 	private 
 	def pic_params
-		params.require(:pic).permit(:lesson, :emotion, :learned)
+		#sucks the field out of the form
+		params.require(:pic).permit(:lesson, :emotion, :learned, :image)
 	end 
 		
 	end
