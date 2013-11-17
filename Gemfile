@@ -45,3 +45,4 @@ gem "twitter-bootstrap-rails"
 # gem 'debugger', group: [:development, :test]
 gem 'simple_form'
 gem 'carrierwave'
+gem "fog", "~> 1.3.1"
